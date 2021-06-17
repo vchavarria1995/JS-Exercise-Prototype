@@ -58,19 +58,6 @@ function Airplane(name) {
   Person.prototype.toString = function(){
     return `${this.name}, ${this.age}`;
   }
-
-  const romy = new Person('Romy', 29);
-  const bradly = new Person('Bradly', 27);
-  const jordan = new Person ('Jordan', 24);
-
-  console.log(romy);
-  console.log(bradly);
-  console.log(jordan);
- 
-
-  
-  
-  
   
   /*
     TASK 2
@@ -86,10 +73,16 @@ function Airplane(name) {
           + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
   */
   
- function Car() {
-    
+ function Car(model, milesPerGallon) {
+    this.model = model;
+    this.milesPerGallon = milesPerGallon;
+    this.tank = 0;
+    this.odometer = 0;
   }
   
+  Car.prototype.fill = function(gallons){
+    return this.tank = gallons;
+  }
   
   /*
     TASK 3
@@ -98,7 +91,7 @@ function Airplane(name) {
       - Besides the methods on Person.prototype, babies have the ability to `.play()`:
           + Should return a string "Playing with x", x being the favorite toy.
   */
- function Baby() {
+ function Baby(name, age, favoriteToy) {
    
   }
  
