@@ -105,10 +105,10 @@ function Airplane(name) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. the first rule is global binding, when in a global scope this is the global object or undefined if in strict mode
+    2. the second rule is implicit binding, when dot calls a function, this is the object thats to the left of the period of what the function called for
+    3. the third rule is new binding, its when you use the new keyword to make a new object and this points to it
+    4. the fourth rule is explicit binding, its when you use the call or apply method in javascript, explicitly defining this
   */
   
   
