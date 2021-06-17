@@ -81,7 +81,7 @@ function Airplane(name) {
   }
   
   Car.prototype.fill = function(gallons){
-    return this.tank = gallons;
+    return this.tank += gallons;
   }
   
   /*
